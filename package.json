@@ -10,8 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@lifeomic/react-native-components": "^1.0.0",
     "react": "18.2.0",
-    "react-native": "0.71.2"
+    "react-native": "0.71.2",
+    "react-native-app-auth": "^6.4.3",
+    "react-native-device-info": "^10.3.0",
+    "react-native-keychain": "^8.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
