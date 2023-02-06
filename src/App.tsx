@@ -1,7 +1,7 @@
-import React, {FC} from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import React, { FC } from 'react';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
 import OAuth from './oauthConfig';
-import {AuthConfiguration} from 'react-native-app-auth';
+import { AuthConfiguration } from 'react-native-app-auth';
 import {
   AuthContextProvider,
   OAuthContextProvider,
@@ -23,7 +23,7 @@ const authConfig: AuthConfiguration = {
 };
 
 const App: FC = () => {
-  const {buttonStyle, textStyle} = styles;
+  const { buttonStyle, textStyle } = styles;
 
   return (
     <SafeAreaView>
@@ -33,13 +33,15 @@ const App: FC = () => {
           <OAuthLoginButton
             onSuccess={noop}
             onFail={onFail}
-            style={buttonStyle}>
+            style={buttonStyle}
+          >
             <Text style={textStyle}>Login</Text>
           </OAuthLoginButton>
           <OAuthLogoutButton
             onSuccess={noop}
             onFail={onFail}
-            style={buttonStyle}>
+            style={buttonStyle}
+          >
             <Text style={textStyle}>Logout</Text>
           </OAuthLogoutButton>
         </OAuthContextProvider>
@@ -49,7 +51,7 @@ const App: FC = () => {
 };
 
 const IsSignedIn: FC = () => {
-  const {isLoggedIn, authResult} = useAuth();
+  const { isLoggedIn, authResult } = useAuth();
   return (
     <Text>
       {isLoggedIn
