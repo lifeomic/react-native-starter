@@ -7,7 +7,10 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier '**/*.{ts,tsx,js,jsx,json,md}'",
+    "format:check": "yarn format --check",
+    "format:write": "yarn format --write"
   },
   "dependencies": {
     "@lifeomic/react-native-components": "^1.0.0",
