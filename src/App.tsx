@@ -1,14 +1,10 @@
-import React, { FC } from 'react';
-import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import React from 'react';
 import OAuth from './oauthConfig';
 import { AuthConfiguration } from 'react-native-app-auth';
-import {
-  AuthContextProvider,
-  OAuthContextProvider,
-  OAuthLoginButton,
-  OAuthLogoutButton,
-  useAuth,
-} from '@lifeomic/react-native-components';
+import { RootProviders, RootStack, init } from '@lifeomic/react-native-sdk';
+
+// Default LifeOmic app initialization (e.g. i18next, etc.)
+init();
 
 const authConfig: AuthConfiguration = {
   clientId: OAuth.clientId,
@@ -22,59 +18,12 @@ const authConfig: AuthConfiguration = {
   usePKCE: true,
 };
 
-const App: FC = () => {
-  const { buttonStyle, textStyle } = styles;
-
+function App() {
   return (
-    <SafeAreaView>
-      <AuthContextProvider>
-        <IsSignedIn />
-        <OAuthContextProvider authConfig={authConfig}>
-          <OAuthLoginButton
-            onSuccess={noop}
-            onFail={onFail}
-            style={buttonStyle}
-          >
-            <Text style={textStyle}>Login</Text>
-          </OAuthLoginButton>
-          <OAuthLogoutButton
-            onSuccess={noop}
-            onFail={onFail}
-            style={buttonStyle}
-          >
-            <Text style={textStyle}>Logout</Text>
-          </OAuthLogoutButton>
-        </OAuthContextProvider>
-      </AuthContextProvider>
-    </SafeAreaView>
+    <RootProviders authConfig={authConfig}>
+      <RootStack />
+    </RootProviders>
   );
-};
-
-const IsSignedIn: FC = () => {
-  const { isLoggedIn, authResult } = useAuth();
-  return (
-    <Text>
-      {isLoggedIn
-        ? `Logged in until ${authResult?.accessTokenExpirationDate}`
-        : 'Logged out'}
-    </Text>
-  );
-};
-
-const noop = () => {};
-const onFail = console.error;
-
-const styles = StyleSheet.create({
-  buttonStyle: {
-    width: '100%',
-    height: 40,
-    backgroundColor: '#e3e3e3',
-    marginTop: 40,
-    paddingTop: 10,
-  },
-  textStyle: {
-    textAlign: 'center',
-  },
-});
+}
 
 export default App;
