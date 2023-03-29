@@ -1,0 +1,19 @@
+//
+//  Config.xcconfig
+//  StarterApp
+//
+//  Created by Mark DeLaVergne on 3/29/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Versioning
+BUILD_NUMBER=1
+MARKETING_VERSION=1.0.0
+
+// Deployment and Architecture
+IPHONEOS_DEPLOYMENT_TARGET=12.4
+PRODUCT_BUNDLE_DISPLAY_NAME=LifeOmic
+PRODUCT_BUNDLE_IDENTIFIER=com.lifeomic.mobile-example
+APP_LINK_SCHEME=lo-sample
