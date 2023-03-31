@@ -1,0 +1,7 @@
+android {
+    defaultConfig {
+        manifestPlaceholders = [appDisplayName: "LifeOmic",
+                                appLinkScheme: "lo-sample",
+                                appAuthRedirectScheme: 'com.lifeomic.mobile-example']
+    }
+}

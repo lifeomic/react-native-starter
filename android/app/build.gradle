@@ -95,14 +95,11 @@ android {
 
     namespace "com.starterapp"
     defaultConfig {
-        applicationId "com.starterapp"
+        applicationId System.getenv().getOrDefault("APP_IDENTIFIER", "com.starterapp")
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        manifestPlaceholders = [
-            appAuthRedirectScheme: 'com.lifeomic.mobile-example'
-        ]
     }
 
     splits {
@@ -171,3 +168,4 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: file('overrides.gradle')
