@@ -39,6 +39,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StarterApp/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-StarterApp-StarterAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarterApp-StarterAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-StarterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterApp.debug.xcconfig"; path = "Target Support Files/Pods-StarterApp/Pods-StarterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D38580829DB402C00CABAAE /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		4D6F23DF29D4D07900A08A9C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-StarterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterApp.release.xcconfig"; path = "Target Support Files/Pods-StarterApp/Pods-StarterApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-StarterApp-StarterAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterApp-StarterAppTests.debug.xcconfig"; path = "Target Support Files/Pods-StarterApp-StarterAppTests/Pods-StarterApp-StarterAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4D38580829DB402C00CABAAE /* MaterialCommunityIcons.ttf */,
 				13B07FAE1A68108700A75B9A /* StarterApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* StarterAppTests */,
