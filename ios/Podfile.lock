@@ -441,7 +441,7 @@ PODS:
     - React-Core
   - RNKeychain (8.1.1):
     - React-Core
-  - RNReanimated (2.8.0):
+  - RNReanimated (2.14.4):
     - DoubleConversion
     - FBLazyVector
     - FBReactNativeSpec
@@ -686,11 +686,11 @@ SPEC CHECKSUMS:
   Flipper-RSocket: d9d9ade67cbecf6ac10730304bf5607266dd2541
   FlipperKit: cbdee19bdd4e7f05472a66ce290f1b729ba3cb86
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  glog: 791fe035093b84822da7f0870421a25839ca7870
-  hermes-engine: e896fe63689c97ef52812de0cc3ef1adf2958858
+  glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
+  hermes-engine: 6351580c827b3b03e5f25aadcf989f582d0b0a86
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  RCT-Folly: 85766c3226c7ec638f05ad7cb3cf6a268d6c4241
+  RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: c154ebcfbf41d6fef86c52674fc1aa08837ff538
   RCTTypeSafety: 3063e5a1e5b1dc2cbeda5c8f8926c0ad1a6b0871
   React: 0a1a36e8e81cfaac244ed88b97f23ab56e5434f0
@@ -726,7 +726,7 @@ SPEC CHECKSUMS:
   RNDeviceInfo: 4701f0bf2a06b34654745053db0ce4cb0c53ada7
   RNGestureHandler: 071d7a9ad81e8b83fe7663b303d132406a7d8f39
   RNKeychain: ff836453cba46938e0e9e4c22e43d43fa2c90333
-  RNReanimated: 3102bd630c372ec7c38a5790eb625011361bc213
+  RNReanimated: cc5e3aa479cb9170bcccf8204291a6950a3be128
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
   RNSVG: 53c661b76829783cdaf9b7a57258f3d3b4c28315
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
