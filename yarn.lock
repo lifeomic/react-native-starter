@@ -1610,9 +1610,9 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@lifeomic/chromicons-native@^2.14.0":
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/@lifeomic/chromicons-native/-/chromicons-native-2.14.0.tgz#1be878c98e333931bf57b6b69f3629c2f4cdfbb2"
-  integrity sha512-WYUrZpsqvOeDga+3mhZ1jvVK+uKc5f6j3ksfAoCXz6r4AEDDW8CnEweTrgEbEtTJ6utcOar2Uiu5UerTVqJlyA==
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/@lifeomic/chromicons-native/-/chromicons-native-2.16.0.tgz#fe1a6c4b57bca21e2ce1f2d8d575a1b014c983b1"
+  integrity sha512-foPeepmhnW3qTLYVvjV1vozxi9FjdQCDjhJ1tv8PJMleRCw5jdzaJZV1/QLWC5/ZrQrK68xtD7Ei1qb6HZbpQA==
 
 "@lifeomic/react-native-sdk@^1.5.4":
   version "1.5.4"
@@ -3239,10 +3239,15 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
-csstype@^3.0.2, csstype@^3.0.6:
+csstype@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
+
+csstype@^3.0.6:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
+  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 "d3-array@1.2.0 - 2":
   version "2.12.1"
