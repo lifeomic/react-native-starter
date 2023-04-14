@@ -38,36 +38,29 @@ export const PushNotificationsScreen = () => {
       category: 'SOME_CATEGORY',
       userInfo: {},
     });
-
-    console.log('local: ', notification);
   };
 
   useEffect(() => {
     requestNotificationsPermissions(({ deviceToken, denied, error }) => {
-      console.log({ deviceToken, denied, error });
+      return { deviceToken, denied, error };
     });
 
     onNotificationReceived((notification) => {
-      console.log({ receivedNotification: notification });
-      console.warn({ receivedNotification: JSON.stringify(notification) });
+      return { receivedNotification: notification };
     });
 
     onNotificationOpened((notification) => {
-      console.log({ openedNotification: notification });
-      console.warn({ openedNotification: JSON.stringify(notification) });
+      return { openedNotification: notification };
     });
 
     const getInitial = async () => {
       const notification = await getInitialNotification();
-      console.log({ initialNotification: notification });
-      if (notification) {
-        console.warn({ initialNotification: JSON.stringify(notification) });
-      }
+      return { initialNotification: notification };
     };
 
     const isRegistered = async () => {
       const res = await isRegisteredForNotifications();
-      console.log({ isRegistered: res });
+      return { isRegistered: res };
     };
 
     getInitial();
