@@ -1614,10 +1614,10 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/chromicons-native/-/chromicons-native-2.16.0.tgz#fe1a6c4b57bca21e2ce1f2d8d575a1b014c983b1"
   integrity sha512-foPeepmhnW3qTLYVvjV1vozxi9FjdQCDjhJ1tv8PJMleRCw5jdzaJZV1/QLWC5/ZrQrK68xtD7Ei1qb6HZbpQA==
 
-"@lifeomic/react-native-sdk@^1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@lifeomic/react-native-sdk/-/react-native-sdk-1.5.4.tgz#c9eec96f009d74372b0632694c7cc113fb5c9c52"
-  integrity sha512-6XLaE3wdz87I7cXIycCDV3HiviM0CSRRxAoWQBaP7CwTP1nlMhOuWvfZ3IyKfAPlrstB3MxPDylA/f8hANKorw==
+"@lifeomic/react-native-sdk@^1.5.6":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@lifeomic/react-native-sdk/-/react-native-sdk-1.5.6.tgz#1feca2cb6e1ed8e0fbf1900448b1f952f2dc81eb"
+  integrity sha512-TmFjjqQvOHT/cZoo6qzNMNAmSpjYY5ldXE+5Ta2aqzpEuaMr6fRxcpjC4tRGzxUkNKCKHLms/fIUy1LBoCo/2g==
   dependencies:
     "@lifeomic/chromicons-native" "^2.14.0"
     "@types/fhir" "^0.0.36"
