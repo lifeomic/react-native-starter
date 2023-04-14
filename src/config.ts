@@ -1,4 +1,4 @@
-export default {
+export const oauthConfig = {
   clientId: '36snajbcbt8tmg2ir5r5k1rdpp',
   redirectUrl: 'com.lifeomic.mobile-example://loginCallback',
   authorizationEndpoint:
@@ -7,4 +7,9 @@ export default {
     'https://lifeomic-prod-us.auth.us-east-2.amazoncognito.com/oauth2/token',
   revokeEndpoint:
     'https://lifeomic-prod-us.auth.us-east-2.amazoncognito.com/oauth2/revoke',
+};
+
+export const simpleTheme = {
+  primaryColor: '#67595E',
+  accentColor: '#A49393',
 };
