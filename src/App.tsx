@@ -1,7 +1,12 @@
 import React from 'react';
 import { oauthConfig as OAuth, simpleTheme } from './config';
 import { AuthConfiguration } from 'react-native-app-auth';
-import { DeveloperConfigProvider, RootProviders, RootStack, init } from '@lifeomic/react-native-sdk';
+import {
+  DeveloperConfigProvider,
+  RootProviders,
+  RootStack,
+  init,
+} from '@lifeomic/react-native-sdk';
 
 // Default LifeOmic app initialization (e.g. i18next, etc.)
 init();
@@ -20,9 +25,11 @@ const authConfig: AuthConfiguration = {
 
 function App() {
   return (
-    <DeveloperConfigProvider developerConfig={{
-      simpleTheme: {...simpleTheme}
-    }}>
+    <DeveloperConfigProvider
+      developerConfig={{
+        simpleTheme,
+      }}
+    >
       <RootProviders authConfig={authConfig}>
         <RootStack />
       </RootProviders>
