@@ -1,16 +1,12 @@
-import React, { useEffect } from 'react';
-import OAuth from './oauthConfig';
+import React from 'react';
+import { oauthConfig as OAuth, simpleTheme } from './config';
 import { AuthConfiguration } from 'react-native-app-auth';
-import { RootProviders, RootStack, init } from '@lifeomic/react-native-sdk';
-import { PushNotificationsScreen } from './Screens/PushNotificationsScreen';
-
-const PushNotificationScreenProvider = ({
-  children,
-}: {
-  children?: React.ReactNode;
-}) => {
-  return <PushNotificationsScreen />;
-};
+import {
+  DeveloperConfigProvider,
+  RootProviders,
+  RootStack,
+  init,
+} from '@lifeomic/react-native-sdk';
 
 // Default LifeOmic app initialization (e.g. i18next, etc.)
 init();
@@ -29,11 +25,15 @@ const authConfig: AuthConfiguration = {
 
 function App() {
   return (
-    <RootProviders authConfig={authConfig}>
-      <PushNotificationScreenProvider>
+    <DeveloperConfigProvider
+      developerConfig={{
+        simpleTheme,
+      }}
+    >
+      <RootProviders authConfig={authConfig}>
         <RootStack />
-      </PushNotificationScreenProvider>
-    </RootProviders>
+      </RootProviders>
+    </DeveloperConfigProvider>
   );
 }
 
