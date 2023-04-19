@@ -5,7 +5,7 @@ This repo demonstrates utilizing [@lifeomic/react-native-sdk] for a branded app.
 ## Getting Started
 
 - `yarn install`
-- `cd ios && pod install && cd ../`
+- `bundle install && cd ios && bundle exec pod install && cd ../`
 - `yarn start`
 - type `i` or `a` to run on either platform
 
