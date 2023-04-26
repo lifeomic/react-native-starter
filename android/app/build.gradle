@@ -98,8 +98,8 @@ android {
         applicationId System.getenv().getOrDefault("APP_IDENTIFIER", "com.starterapp")
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode Integer.parseInt(System.getenv().getOrDefault("VERSION_CODE", "1"))
+        versionName System.getenv().getOrDefault("VERSION_NAME", "1.0")
     }
 
     splits {
