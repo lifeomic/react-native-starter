@@ -1614,13 +1614,14 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/chromicons-native/-/chromicons-native-2.16.1.tgz#38ab63666fba651e594d7f870aba66248d65d4b6"
   integrity sha512-4W8iwe12juK0r30CcgxSOL0aZm4pwnZ2NBcNKytFjKLPKOc9Xhmls3skVmP6UBXzLLgOBIZlAj65LBEivqwnJA==
 
-"@lifeomic/react-native-sdk@^1.13.2":
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/@lifeomic/react-native-sdk/-/react-native-sdk-1.13.2.tgz#b50e1f984717e4b1841351cfe51d020095ec0cb5"
-  integrity sha512-VHwTul23Mjoq2+a892XqHmpoIgMuADI5JaWUo4KufIP5zyxijqlf/30T/HUMP+gddsQo/OaLQVCQsnYJ+bRtog==
+"@lifeomic/react-native-sdk@^1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@lifeomic/react-native-sdk/-/react-native-sdk-1.15.0.tgz#143654fdf3ebaa28ca520fe60d15b95f58360373"
+  integrity sha512-ssAQtaHZFzFLfXcmbuotXIniO9oAj9raona7h0CMRgZDrFDUkxSZtn9DvyABLX6x9cGkT4JYMSP8E6ll3gScXQ==
   dependencies:
     "@lifeomic/chromicons-native" "^2.16.1"
     "@types/fhir" "^0.0.36"
+    color "^4.2.3"
     d3-scale "3.2.1"
     date-fns "^2.29.3"
     deepmerge "^4.3.1"
@@ -1631,6 +1632,11 @@
     react-native-vector-icons "^9.2.0"
     react-navigation-header-buttons "^9.0.1"
     react-use "^17.4.0"
+
+"@material/material-color-utilities@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@material/material-color-utilities/-/material-color-utilities-0.2.6.tgz#eb2e86e618e1646be5ba84a25c859b04544aad56"
+  integrity sha512-pMdkH7PvuJQS1q9igiPFfrS04Zu1feDXOVV69uWe2kr+RcK+7v3OylIYMwJDIwip1pFdGyTY4KkMy6vPIA/uSw==
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
@@ -3010,7 +3016,7 @@ color-name@^1.0.0, color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-color-string@^1.6.0:
+color-string@^1.6.0, color-string@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
   integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
@@ -3025,6 +3031,14 @@ color@^3.1.2:
   dependencies:
     color-convert "^1.9.3"
     color-string "^1.6.0"
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 colorette@^1.0.7:
   version "1.4.0"
