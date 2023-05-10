@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import {
   Text,
   View,
-  Button,
   Platform,
   StyleSheet,
   TouchableOpacity,
@@ -134,7 +133,6 @@ export const NotificationsExampleScreen = () => {
         // Register the device with the LifeOmic platform to start receiving push notifications
         registerDeviceToken({
           deviceToken,
-          // TODO: update the application when the background allows BMAs
           application: 'lifeResearch', // The application name will be provided by LifeOmic upon onboarding
           httpClient,
           accountId: account.id,
