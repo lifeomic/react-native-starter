@@ -5,6 +5,7 @@ import {
   Platform,
   StyleSheet,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 import {
   registerDeviceToken,
@@ -16,6 +17,7 @@ import {
   onNotificationReceived,
 } from '@lifeomic/react-native-sdk';
 import { Notifications, Notification } from 'react-native-notifications';
+import { messages } from './utils/constants';
 
 type EventType = 'notificationReceived' | 'notificationOpened';
 
@@ -65,6 +67,19 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     fontSize: 16,
+  },
+  linkText: {
+    color: 'blue',
+    marginLeft: 20,
+  },
+  infoText: {
+    marginLeft: 20,
+  },
+  borderTextContainer: {
+    paddingBottom: 20,
+  },
+  bodyTextContainer: {
+    paddingBottom: 10,
   },
 });
 
@@ -188,9 +203,43 @@ export const NotificationsExampleScreen = () => {
     getInitial();
   }, []);
 
+  const handleOpenLink = (link: string) => {
+    Linking.openURL(link);
+  };
+
   return (
     <View>
-      <Text style={styles.deviceToken}>Device Token: {deviceToken}</Text>
+      <Text style={styles.deviceToken}>
+        Device Token: {deviceToken ? deviceToken : 'undefined'}
+      </Text>
+
+      {!deviceToken && (
+        <View>
+          <View style={styles.borderTextContainer}>
+            <Text style={styles.infoText}>{messages.readmeRef}</Text>
+          </View>
+
+          <View style={styles.bodyTextContainer}>
+            <Text style={styles.infoText}>{messages.androidUsers}</Text>
+            <Text
+              style={styles.linkText}
+              onPress={() => handleOpenLink(messages.androidFirebaseLink)}
+            >
+              {messages.androidLinkText}
+            </Text>
+          </View>
+
+          <View style={styles.borderTextContainer}>
+            <Text style={styles.infoText}>{messages.iosUsers}</Text>
+            <Text
+              style={styles.linkText}
+              onPress={() => handleOpenLink(messages.iosAPNLink)}
+            >
+              {messages.iosLinkText}
+            </Text>
+          </View>
+        </View>
+      )}
 
       <View style={styles.buttonContainer}>
         <TouchableOpacity

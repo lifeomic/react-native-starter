@@ -24,10 +24,14 @@ app running locally in minutes.
 
 #### Android
 
-To get started with push notifications, you first need to add Firebase to your
-android project: https://firebase.google.com/docs/android/setup
+Add Firebase to your android project:
+https://firebase.google.com/docs/android/setup
 
 #### iOS
 
 Allow push notification entitlement/capabilities through XCode:
 https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns
+
+After generating your certificates for either platform, you can collaborate with
+LifeOmic to share these certificates and enable push notifications in your
+project.
