@@ -6,5 +6,5 @@ export const messages = {
   iosLinkText: 'Allow push notification capabilities through XCode.',
   iosAPNLink:
     'https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns',
-  readmeRef: 'See README.md or click the link below for more information',
+  readmeRef: 'See README.md or follow the links below for more information',
 };
