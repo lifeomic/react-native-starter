@@ -1614,10 +1614,10 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/chromicons-native/-/chromicons-native-2.16.1.tgz#38ab63666fba651e594d7f870aba66248d65d4b6"
   integrity sha512-4W8iwe12juK0r30CcgxSOL0aZm4pwnZ2NBcNKytFjKLPKOc9Xhmls3skVmP6UBXzLLgOBIZlAj65LBEivqwnJA==
 
-"@lifeomic/react-native-sdk@^1.19.1":
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/@lifeomic/react-native-sdk/-/react-native-sdk-1.19.1.tgz#185d9f39441371b83c26638e1716a15b57dbca77"
-  integrity sha512-YI7CIWvRoZhMlilz5yjEm7eRwe6+AsT7KT9Xi6dS92B4dtz1nzzzfeXRUlw3qeISShEt5fwuc2mblKhUmoAsgQ==
+"@lifeomic/react-native-sdk@^1.20.0":
+  version "1.20.1"
+  resolved "https://registry.yarnpkg.com/@lifeomic/react-native-sdk/-/react-native-sdk-1.20.1.tgz#bfe8bc33a9354e02a27b239e81e2b7475ee89670"
+  integrity sha512-y9PTVx/c60H6eodVI5pP/tHsnVdyOGnbEFYFb45sP0WyGxPdDOjukmsAwctdp3XUzgLH7VP3Q5RLv8yvvJZhhw==
   dependencies:
     "@lifeomic/chromicons-native" "^2.16.1"
     "@types/fhir" "^0.0.36"
@@ -4502,6 +4502,13 @@ hyphenate-style-name@^1.0.3:
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
 
+i18next-resources-to-backend@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/i18next-resources-to-backend/-/i18next-resources-to-backend-1.1.3.tgz#bb6a47be1f65feaecc7a4e989b2a48864374e6a5"
+  integrity sha512-iDJITrMHoKLUa3B2wippgH62yM4f4wCEofeTj55rML9i7QrMDGKdr8FGCnSNNxRQzvW4546Qx6v2/xY3dAhvUA==
+  dependencies:
+    "@babel/runtime" "^7.20.6"
+
 i18next@^22.4.10:
   version "22.4.10"
   resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.10.tgz#cfbfc412c6bc83e3c16564f47e6a5c145255960e"
@@ -6788,6 +6795,11 @@ react-native-toast-message@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/react-native-toast-message/-/react-native-toast-message-2.1.6.tgz#322827c66901fa22cb3db614c7383cc717f5bbe2"
   integrity sha512-VctXuq20vmRa9AE13acaNZhrLcS3FaBS2zEevS3+vhBsnVZYG0FIlWIis9tVnpnNxUb3ART+BWtwQjzSttXTng==
+
+react-native-uuid@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-uuid/-/react-native-uuid-2.0.1.tgz#ed4e2dfb1683eddb66967eb5dca140dfe1abddb9"
+  integrity sha512-cptnoIbL53GTCrWlb/+jrDC6tvb7ypIyzbXNJcpR3Vab0mkeaaVd5qnB3f0whXYzS+SMoSQLcUUB0gEWqkPC0g==
 
 react-native-vector-icons@^9.2.0:
   version "9.2.0"
