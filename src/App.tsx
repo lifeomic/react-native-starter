@@ -7,8 +7,6 @@ import {
   RootStack,
   init,
 } from '@lifeomic/react-native-sdk';
-import { NotificationsExampleScreen } from './NotificationsExampleScreen';
-import { t } from 'i18next';
 
 // Default LifeOmic app initialization (e.g. i18next, etc.)
 init();
@@ -30,16 +28,6 @@ function App() {
     <DeveloperConfigProvider
       developerConfig={{
         simpleTheme,
-        additionalNavigationTabs: [
-          {
-            name: 'NotificationsExample',
-            component: NotificationsExampleScreen,
-            options: {
-              tabBarLabel: t('tabs-notificatiosn', 'Notifications Playground'),
-              tabBarIcon: 'bell',
-            },
-          },
-        ],
       }}
     >
       <RootProviders authConfig={authConfig}>
