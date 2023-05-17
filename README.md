@@ -19,3 +19,19 @@ and `@lifeomic/react-native-sdk` (and its peer dependencies), you can have an
 app running locally in minutes.
 
 [@lifeomic/react-native-sdk]: https://github.com/lifeomic/react-native-sdk
+
+## Registering your device to recieve push notifications
+
+#### Android
+
+Add Firebase to your android project:
+https://firebase.google.com/docs/android/setup
+
+#### iOS
+
+Allow push notification entitlement/capabilities through XCode:
+https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns
+
+After generating your certificates for either platform, you can collaborate with
+LifeOmic to share these certificates and enable push notifications in your
+project.
