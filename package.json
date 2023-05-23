@@ -13,7 +13,8 @@
     "format:write": "yarn format --write"
   },
   "dependencies": {
-    "@lifeomic/react-native-sdk": "^1.20.0",
+    "@expo/react-native-action-sheet": "^4.0.1",
+    "@lifeomic/react-native-sdk": "^1.21.3",
     "@material/material-color-utilities": "^0.2.6",
     "@react-native-async-storage/async-storage": "^1.18.1",
     "@react-native-community/netinfo": "^9.3.8",
