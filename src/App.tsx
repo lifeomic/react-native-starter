@@ -21,6 +21,10 @@ const authConfig: AuthConfiguration = {
   },
   scopes: ['openid', 'profile'],
   usePKCE: true,
+  additionalParameters: {
+    prompt: 'consent',
+  },
+  iosPrefersEphemeralSession: true,
 };
 
 function App() {

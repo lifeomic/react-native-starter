@@ -1,12 +1,9 @@
 export const oauthConfig = {
   clientId: '36snajbcbt8tmg2ir5r5k1rdpp',
-  redirectUrl: 'com.lifeomic.mobile-example://loginCallback',
-  authorizationEndpoint:
-    'https://lifeomic-prod-us.auth.us-east-2.amazoncognito.com/logout',
-  tokenEndpoint:
-    'https://lifeomic-prod-us.auth.us-east-2.amazoncognito.com/oauth2/token',
-  revokeEndpoint:
-    'https://lifeomic-prod-us.auth.us-east-2.amazoncognito.com/oauth2/revoke',
+  redirectUrl: 'com.lifeomic.mobile-example://login-callback',
+  authorizationEndpoint: 'https://apps.us.lifeomic.com/oidc-provider/auth',
+  tokenEndpoint: 'https://apps.us.lifeomic.com/oidc-provider/token',
+  revokeEndpoint: 'https://apps.us.lifeomic.com/oidc-provider/token/revocation',
 };
 
 export const simpleTheme = {
