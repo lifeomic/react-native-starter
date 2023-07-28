@@ -20,6 +20,6 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx,js,jsx}'],
   transformIgnorePatterns: [
-    'node_modules/(?!(jest-)?@?react-native|react-navigation-header-buttons|query-string|decode-uri-component|split-on-first|filter-obj)',
+    'node_modules/(?!(jest-)?@?react-native|react-navigation-header-buttons|query-string|decode-uri-component|split-on-first|filter-obj|victory)',
   ]
 };
