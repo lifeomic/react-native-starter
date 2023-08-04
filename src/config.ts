@@ -8,5 +8,4 @@ export const oauthConfig = {
 
 export const simpleTheme = {
   primaryColor: '#67595E',
-  accentColor: '#A49393',
 };
