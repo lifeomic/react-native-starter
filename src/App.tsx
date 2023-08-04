@@ -19,7 +19,7 @@ const authConfig: AuthConfiguration = {
     tokenEndpoint: OAuth.tokenEndpoint,
     revocationEndpoint: OAuth.revokeEndpoint,
   },
-  scopes: ['openid', 'profile'],
+  scopes: ['openid', 'profile', 'offline_access'],
   usePKCE: true,
   additionalParameters: {
     prompt: 'consent',
